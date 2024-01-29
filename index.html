@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://kit.fontawesome.com/55bf5c5a41.js" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News For u</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+
+ <nav>
+     <div class="main-nav container flex">
+        <a href="#" onclick="reload()" class="company-logo">
+            <!-- <img src="assets/logo2.png" alt="" class="logo"> -->
+           
+            <h3 class="logo">News <span>For</span> You <img src="https://cdn-icons-png.freepik.com/256/1224/1224991.png?ga=GA1.1.1169391747.1706168687&semt=ais" class="mic"></h3>
+        </a>
+        <div class="nav-links">
+            <ul class="flex">
+                
+                    <li class="hover-link nav-item" id="Sports" onclick="onNavItemClick('Sports')">Sports</li>
+                    <li class="hover-link nav-item" id="Education" onclick="onNavItemClick('Education')">Education</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    
+            </ul>
+        </div>
+        <div class="search-bar flex">
+            <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+            <button class="Search-button" id="Search-button">Search</button>
+        </div>
+     </div>
+ </nav>
+
+
+
+
+   <main>
+    <div class="cards-container container flex" id="cards-container">
+       
+    </div>
+   </main>
+   <template id="template-news-card"> 
+    <div class="card">
+    <div class="card-header">
+        <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+    </div>
+    <div class="card-content">
+        <h3 id="news-title">this is the Title</h3>
+        <h6 class="news-source" id="news-source">End Gadget 28-01-2024</h6>
+        <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil dicta accusantium totam sequi perferendis inventore qui, illum molestiae dolores magnam in eos laudantium saepe, dolorem vero ipsum animi rem ipsam?</p>
+    </div>
+</div>
+ </template>
+    
+    <script src="news.js"></script>
+</body>
+</html>
